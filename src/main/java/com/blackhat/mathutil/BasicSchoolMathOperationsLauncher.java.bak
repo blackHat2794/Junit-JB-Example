@@ -1,0 +1,9 @@
+public class BasicSchoolMathOperationsLauncher
+{
+	public static void main(String... args){
+	
+		BasicSchoolMathOperations mathOperations = new BasicSchoolMathOperations();
+
+
+	}
+}
