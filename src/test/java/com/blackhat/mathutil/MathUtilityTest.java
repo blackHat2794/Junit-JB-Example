@@ -8,7 +8,7 @@ class MathUtilityTest {
 
 	@Test
 	void test() {
-		System.out.println("Later we will imlement);
+		System.out.println("Later we will imlement");
 	}
 
 }
