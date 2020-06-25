@@ -1,3 +1,5 @@
+import com.blackhat.mathutil.BasicSchoolMathOperations;
+
 public class BasicSchoolMathOperationsLauncher
 {
 	public static void main(String... args){
