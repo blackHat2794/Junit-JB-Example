@@ -35,10 +35,10 @@
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.1</version>
-				<configuration>
+				<!--<configuration>
 					<groups>TEST</groups>
 				</configuration>
-				<!-- include tags <groups>integration, feature-168</groups> exclude tags 
+				 include tags <groups>integration, feature-168</groups> exclude tags 
 					<excludedGroups>slow</excludedGroups> -->
 			</plugin>
 		</plugins>
