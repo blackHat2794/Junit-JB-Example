@@ -1,0 +1,50 @@
+#Exception 1: NO test found with test runner "Junit 5"
+
+java.lang.NoClassDefFoundError: org/junit/platform/launcher/core/LauncherFactory
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestLoader.<init>(JUnit5TestLoader.java:31)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.createRawTestLoader(RemoteTestRunner.java:367)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.createLoader(RemoteTestRunner.java:362)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.defaultInit(RemoteTestRunner.java:306)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.init(RemoteTestRunner.java:221)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:205)
+Caused by: java.lang.ClassNotFoundException: org.junit.platform.launcher.core.LauncherFactory
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 11 more
+	
+Solution: You ran into Eclipse bug 525948 which has already been fixed and which will be published 
+		   in the upcoming release Oxygen.3 (4.7.3), March 21, 2018.
+		   ADD:
+		   <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-runner</artifactId>
+        <version>${junit.platform.version}</version>
+        <scope>test</scope>
+    </dependency>
+
+    
+####ERROR:
+ [ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+ Solution:
+ By default, Eclipse configured the JRE automatically.
+ Maven needs JDK to compile project. Make sure you have installed/downloaded JDK and add it into Eclipse IDE as installed JRE.
+
+1. Windows -> Preferences -> Java -> Installed JREs -> Add… , select a JDK folder
+Add a new JDK as JRE and checked it.
+
+
+
+####Exception:
+
+org.junit.platform.commons.JUnitException: 
+@BeforeAll method 'void com.blackhat.mathutil.JUnitLifeCycleHook.contextBeforeAll()'
+ must be static unless the test class is annotated with 
+ @TestInstance(Lifecycle.PER_CLASS).
+	

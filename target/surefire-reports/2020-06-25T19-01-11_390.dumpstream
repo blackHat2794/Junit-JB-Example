@@ -1,0 +1,12 @@
+# Created at 2020-06-25T19:01:32.064
+Jun 25, 2020 7:01:30 PM org.junit.jupiter.engine.discovery.MethodSelectorResolver resolve
+
+# Created at 2020-06-25T19:01:32.064
+WARNING: Possible configuration error: method [void com.blackhat.mathutil.BasicSchoolMathOperationsTest.whenGivenRadiusThenReturnAreaOf_CircleComputeTest()] resulted in multiple TestDescriptors [org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor, org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor]. This is typically the result of annotating a method with multiple competing annotations such as @Test, @RepeatedTest, @ParameterizedTest, @TestFactory, etc.
+
+# Created at 2020-06-25T19:01:32.197
+Jun 25, 2020 7:01:32 PM org.junit.jupiter.engine.discovery.MethodSelectorResolver resolve
+
+# Created at 2020-06-25T19:01:32.198
+WARNING: Possible configuration error: method [void com.blackhat.mathutil.BasicSchoolMathOperationsTest.whenGivenRadiusThenReturnAreaOf_CircleComputeTest()] resulted in multiple TestDescriptors [org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor, org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor]. This is typically the result of annotating a method with multiple competing annotations such as @Test, @RepeatedTest, @ParameterizedTest, @TestFactory, etc.
+
